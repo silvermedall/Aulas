@@ -8,6 +8,7 @@ print(126.4 * 4)
 print(2 / 5)
 print(2 // 5)
 print("\n")
+
 # Exercicio 2
 print("Imprima a frase 'Primeira Frase em Python' no ecrã.")
 print("Primeira Frase em Python")
