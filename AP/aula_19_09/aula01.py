@@ -20,35 +20,42 @@ print("Obtenha o seguinte resultado com uma única instrução:")
 print("Python Menu\n\t1. Primeira linha\n\t2. Segunda\n\t3. Última linha")
 
 print("Leia a frase 'Python' da shell.")
-print(input())
+print(input("Introduz 'Python'"))
 
 print(
     "Leia a frase 'Python' na shell e concatene-a com a frase '3.5' numa única instrução."
 )
 
-print("3.5 " + input())
+print("3.5 " + input("Introduz 'Python'"))
 
 print("Leia e concatene duas frases da shell numa única instrução.")
-print(input() + input())
+print(input("Introduz uma primeira frase") + input("Introduz uma segunda frase"))
 
 print("Leia um número da shell.")
-print(int(input()))
+print(int(input("Introduz um número")))
 
 print("Leia um número da shell e some-o com 2.")
-print(int(input()) + 2)
+print(int(input("Introduz um número")) + 2)
 
 print("Leia um número da shell, some-o com 2 e multiplique o resultado por 2.")
-print((int(input()) + 2) * 2)
+print((int(input("Introduz um número")) + 2) * 2)
 
 print("Leia e some dois números da shell.")
-print(int(input()) + int(input()))
+print(
+    int(input("Introduz o primeiro número")) + int(input("Introduz o segundo número"))
+)
 
 print(
     "Leia um número da shell, some-o por 2 e multiplique o resultado por outro número lido da shell."
 )
-print((int(input()) + 2) * int(input()))
+print(
+    (int(input("Introduz o primeiro número")) + 2)
+    * int(input("Introduz o segundo número"))
+)
 
 print(
     "Leia dois números da shell e obtenha o resto da divisão do primeiro pelo segundo."
 )
-print(int(input()) % int(input()))
+print(
+    int(input("Introduz o primeiro número")) % int(input("Introduz o segundo número"))
+)
