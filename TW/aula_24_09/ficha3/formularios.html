@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form method="post" action="">
+      <p>
+        nome:
+        <input
+          type="text"
+          name="nome1"
+          minlength="2"
+          autocomplete="off"
+          autofocus
+        />
+      </p>
+      <p>
+        código postal:
+        <input type="number" name="cp1" min="0" max="9999" /> -
+        <input type="number" name="cp2" min="0" max="999" />
+      </p>
+      <input type="submit" value="enviar" />
+      <br />
+      <br />
+      <br />
+      <p>login: <input type="text" name="login" /></p>
+      <p>password: <input type="password" name="password" /></p>
+      <input type="submit" value="enviar" />
+      <br />
+      <br />
+      <br />
+      <p>nome:</p>
+      <input type="text" placeholder="nome..." />
+      <p>email:</p>
+      <input type="email" placeholder="email..." />
+      <p>morada:</p>
+      <textarea name="morada" id="morada"></textarea>
+      <br />
+      <br />
+      <input type="submit" value="limpar" />
+      <input type="submit" value="enviar" />
+      <br />
+      <br />
+      <br />
+      <p>estado civil:</p>
+      <input type="radio" name="estado-civil" id="solteiro" />
+      <label for="solteiro">solteiro</label><br />
+      <input type="radio" name="estado-civil" id="casado" />
+      <label for="casado">casado</label><br />
+      <input type="radio" name="estado-civil" id="divorciado" />
+      <label for="divorciado">divorciado</label><br />
+      <input type="radio" name="estado-civil" id="viuvo" />
+      <label for="viuvo">viúvo</label><br />
+      <br />
+      <input type="submit" value="enviar" />
+      <br />
+      <br />
+      <br />
+      <p>conhecimentos em:</p>
+      <input type="checkbox" name="HTML" id="HTML" />
+      <label for="HTML">HTML</label><br />
+      <input type="checkbox" name="CSS" id="CSS" />
+      <label for="CSS">CSS</label><br />
+      <input type="checkbox" name="PHP" id="PHP" />
+      <label for="PHP">PHP</label><br />
+      <br />
+      <button value="enviar">enviar</button>
+      <br />
+      <br />
+      <br />
+      <p>
+        localidade:
+        <select name="localidade" id="localidade">
+          <option value="0" disabled>&nbsp;</option>
+          <option value="1">Aveiro</option>
+          <option value="2">Oliveira de Azeméis</option>
+          <option value="3">São João da Madeira</option>
+          <option value="4">Santa Maria da Feira</option>
+        </select>
+        <button>enviar</button>
+      </p>
+      <br />
+    </form>
+  </body>
+</html>
