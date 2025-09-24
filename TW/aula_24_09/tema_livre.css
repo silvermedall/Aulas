@@ -1,7 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
 
-* {
+:root {
+  --primary: #353535;
+  --secondary: #656565;
+  --text: #fff;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
   font-family: "Alan Sans", sans-serif;
+  background-color: var(--primary);
+  color: var(--text);
+}
+
+.title {
+  font-size: 50px;
+  padding: 10px;
+  color: var(--text);
+}
+
+.text-area {
+  font-size: 20px;
+  padding: 10px;
+  color: var(--text);
+}
+
+.img-area {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: var(--secondary);
+  border-radius: 10px;
+}
+
+.img-area img {
+  border-radius: 10px;
+  background-color: var(--secondary);
+  margin: 10px;
 }
