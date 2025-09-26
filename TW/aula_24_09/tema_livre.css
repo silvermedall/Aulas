@@ -38,6 +38,7 @@ body {
 }
 
 .img-area img {
+  width: 25dvw;
   border-radius: 10px;
   background-color: var(--secondary);
   margin: 10px;
