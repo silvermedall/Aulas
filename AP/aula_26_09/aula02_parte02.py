@@ -8,3 +8,8 @@ partida = 14
 espera = 51
 chegada = (partida + espera) % 24
 print(chegada, "h")
+
+partida_user = input()
+espera_user = input()
+chegada_user = (partida_user + espera_user) % 24
+print(chegada_user, "h")
