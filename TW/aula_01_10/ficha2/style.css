@@ -1,0 +1,39 @@
+body {
+  background-color: #708090;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2em 0;
+}
+
+.container {
+  width: 60%;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  padding: 2em 3em;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 1em 0;
+  margin: 1em 0;
+  border-radius: 10px;
+  border: 0;
+  background-color: lightgray;
+  text-indent: 1em;
+}
+
+button {
+  padding: 1.25em 4em;
+  background-color: #708090;
+  border-radius: 10px;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #607080;
+  transition: 0.2s;
+  transform: scale(1.05);
+}
