@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mexican Food</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .title {
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .gallery {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template: repeat(2, 40vh) / repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .gallery img:nth-of-type(2) {
+        grid-column: span 2;
+      }
+
+      .gallery img:nth-of-type(3) {
+        grid-row: span 2;
+      }
+
+      .gallery img:nth-of-type(4) {
+        grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Mexican Food</h1>
+    </div>
+    <div class="gallery">
+      <img src="pic1.jpg" alt="comida" />
+      <img src="pic2.jpg" alt="comida" />
+      <img src="pic3.jpg" alt="comida" />
+      <img src="pic4.jpg" alt="comida" />
+      <img src="pic5.jpg" alt="comida" />
+    </div>
+  </body>
+</html>

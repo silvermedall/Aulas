@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .flexBox {
+        border: 2px solid black;
+        width: 80vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: center;
+        margin: 10vh auto;
+      }
+
+      .box {
+        width: 300px;
+        height: 200px;
+      }
+
+      #box1 {
+        background: linear-gradient(to right, red, orange);
+      }
+
+      #box2 {
+        background: linear-gradient(to right, green, yellow);
+      }
+
+      #box3 {
+        background: linear-gradient(to right, blue, purple);
+      }
+
+      #box4 {
+        background: linear-gradient(to right, black, gray);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexBox">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+    </div>
+  </body>
+</html>
