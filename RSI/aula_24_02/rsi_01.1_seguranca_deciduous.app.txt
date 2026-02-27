@@ -1,0 +1,54 @@
+title: Ataque à SWAT (Safe Web All Trust :)
+
+facts:
+- login_email: Acesso com email e password
+  from:
+  - reality
+- weak_user: Utilizador pouco cuidadoso
+  from:
+  - login_email
+- admin_user:
+  from:
+  - login_email
+
+attacks:
+- weak_password:
+  from:
+  - weak_user
+- brute_force:
+  from:
+  - weak_password
+- phishing:
+  from:
+  - weak_user
+  - strong_password
+  - delay_login
+
+
+mitigations:
+- strong_password:
+  from:
+  - admin_user
+- delay_login:
+  from:
+  - weak_password
+- 2fa: 2 FA
+  from: 
+  - phishing
+
+
+goals:
+- webapp_access: Accesso à aplicação web
+  from:
+  - brute_force
+  - phishing
+
+- webapp_admin_access: Accesso à aplicação web como admin
+  from:
+  - phishing
+
+
+
+# filter
+#filter:
+#- webapp_access

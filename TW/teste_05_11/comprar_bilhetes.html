@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Paulo Renato Gonçalves Carvalho" />
+    <title>Comprar Bilhetes</title>
+    <style>
+      body {
+        margin: 25px;
+      }
+
+      #formBilhetes {
+        border: solid 1px;
+        padding: 25px;
+        background-color: silver;
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 65px;
+      }
+    </style>
+  </head>
+<body>
+  <form id="formBilhetes" onsubmit="calcularPreco(event)">
+    <h2>Preçário:</h2>
+    <label>
+      Bilhete Adulto (10€):
+      <input type="number" id="adultos" min="0" max="50" value="2" autofocus>
+    </label>
+
+    <label>
+      Bilhete Criança (5€):
+      <input type="number" id="criancas" min="0" max="50" value="1">
+    </label>
+
+    <button type="submit">Calcular</button>
+
+    <p>Valor: <span id="resultado"></p>
+  </form>
+</html>
+<script>
+  function calcularPreco(event) {
+    event.preventDefault();
+
+    let adultos = parseInt(document.getElementById("adultos").value);
+    let criancas = parseInt(document.getElementById("criancas").value);
+    let precoAdulto = 10;
+    let precoCrianca = 5;
+    let totalBilhetes = adultos + criancas;
+    let totalPreco = adultos * precoAdulto + criancas * precoCrianca;
+    let desconto = 0;
+
+    if (totalBilhetes >= 5) {
+      if (criancas > 0) {
+        desconto = precoCrianca; 
+      } else { 
+        desconto = precoAdulto;
+      }
+      totalPreco -= desconto;
+    }
+
+    document.getElementById(
+      "resultado"
+    ).textContent = totalPreco + "€";
+  }
+</script>
